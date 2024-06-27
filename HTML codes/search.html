@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Search </title>
+        <link rel="stylesheet" type="text/css"  href="index.css">
+        <style>
+            #results-container {
+                position: relative;
+                top: 180px;
+            }
+            .song:nth-child(even) {
+                background-color: rgb(230,216,215);
+            }
+            .song:nth-child(odd) {
+                background-color: rgb(147,97,92);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="logopicsp">
+            <img src="mainpics/logo.png">
+        </div>
+        <div class="header">
+            <p class="head">BeatBank</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a  href="index.html">Home</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="search.html">Search</a></li>
+                <li><a href="spotlight.html">Spotlight</a></li>
+            </ul>
+        </nav> 
+        <div class="search-container">
+            <form id="search-form">
+                <input type="text" placeholder="Search for songs" name="search-input">
+                <button type="submit">Search</button>
+            </form>
+            <div id="filter-bar">
+                <label for="max-duration">Max Duration:</label>
+                <input type="number" id="max-duration" name="max-duration">
+                <label for="explicit">Explicit:</label>
+                <select id="explicit" name="explicit">
+                    <option value="all">All</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                <button id="filter-btn" type="button">Filter</button>
+                <button id="clear-filter-btn" type="button">Clear</button>
+            </div>
+    </div>
+
+        <div id="results-container">
+            <div id="results"></div>
+        </div>
+
+
+        <script defer src="iTunes.js"></script>      
+        <div class="search-footer">
+            <p>Copyright &copy: 2023 - 405 Found </p>
+           
+        </div>
+    
+    </body>
+</html>

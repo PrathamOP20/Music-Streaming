@@ -1,0 +1,995 @@
+.header 
+{
+  font-family: "eb garamond", serif;
+  position: fixed;
+  background-color: rgb(255,248,248);
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  font-size: 30px;
+  z-index: 999;
+}
+
+nav 
+{
+  position: fixed;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: rgb(233,209,209);
+  z-index: 999;
+}
+  
+nav ul 
+{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 10;
+}
+  
+nav li 
+{
+  margin: 30px;
+  padding: 30px;
+  transform:translateY(-50px);
+}
+
+nav a 
+{
+  color: black;
+  text-decoration: none;
+}
+nav ul li:hover a {
+  color: white;
+  background-color: #333;
+}
+
+
+nav ul li a.active {
+  background-color: #333;
+  color: white
+}
+
+p.head 
+{
+  text-align: center;
+  font-style: italic;
+  font-size: 48px;
+  color: rgb(24,24,24);
+  transform:translateY(-25px);
+}
+
+#artist1
+{
+  background-color: rgb(147,97,92);
+  position:absolute;
+  top: 540px;
+  left: 0%;
+  width: 33.7%;
+  height: 600px;
+  margin-bottom: 0%;
+}
+
+#text {
+  position: absolute;
+  padding-top: 150px;
+  padding-left: 150px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+#artist1:hover #text {
+  background-color: rgb(147,97,92);
+  height: 450px;
+  width: 100%;
+  display: block;
+  color: white;
+  font-size: 40px;
+  font-family: 'Kanit', sans-serif;
+}
+
+#artist2
+{
+  background-color: rgb(255,248,248);
+  position:absolute;
+  top: 540px;
+  left: 33.7%;
+  width: 32.6%;
+  height: 600px;
+}
+
+#text2{
+  position: absolute;
+  padding-top: 150px;
+  padding-left: 100px;
+  top: 50%;
+  left: 58%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+#artist2:hover #text2 {
+  background-color: rgb(255,248,248);
+  height: 450px;
+  width: 100%;
+  display: block;
+  color: black;
+  font-size: 40px;
+  font-family: 'Kanit', sans-serif;
+}
+
+#artist3
+{
+  background-color: rgb(230,216,215);
+  position: absolute;
+  top: 540px;
+  left: 66.3%;
+  width: 33.7%;
+  height: 600px;
+}
+
+#text3{
+  position: absolute;
+  padding-top: 150px;
+  padding-left: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+#artist3:hover #text3 {
+  background-color: rgb(230,216,215);
+  height: 450px;
+  width: 85%;
+  display: block;
+  color: black;
+  font-size: 40px;
+  font-family: 'Kanit', sans-serif;
+}
+
+.imag1
+{
+  position:absolute;
+  left: 0;
+  width: 100%;
+  top: 150px; 
+}
+
+.imag2
+{
+  position:absolute;
+  left: 0;
+  width: 100%;
+  top: 1150px; 
+}
+
+#artist4
+{
+  background-color: rgb(230,216,215);
+  position:absolute;
+  top: 1280px;
+  left: 0%;
+  width: 33.7%;
+  height: 600px; 
+}
+
+#artist4:hover #text {
+  background-color: rgb(147,97,92);
+  height: 450px;
+  width: 100%;
+  display: block;
+  color: white;
+  font-size: 40px;
+  font-family: 'Kanit', sans-serif;
+}
+
+
+#artist5
+{
+  background-color: rgb(255,248,248);
+  position:absolute;
+  top: 1280px;
+  left: 33.7%;
+  width: 32.6%;
+  height: 600px;
+}
+
+#artist5:hover #text2 {
+  background-color: rgb(255,248,248);
+  height: 450px;
+  width: 100%;
+  display: block;
+  color: black;
+  font-size: 40px;
+  font-family: 'Kanit', sans-serif;
+}
+
+#artist6
+{
+  background-color: rgb(147,97,92);
+  position:absolute;
+  top: 1280px;
+  left: 66.3%;
+  width: 33.7%;
+  height: 600px;
+}
+#artist6:hover #text3 {
+  background-color: rgb(230,216,215);
+  height: 450px;
+  width: 85%;
+  display: block;
+  color: black;
+  font-size: 40px;
+  font-family: 'Kanit', sans-serif;
+}
+
+.imaglast
+{
+  position:absolute;
+  left: 0;
+  width: 100%;
+  top: 1890px; 
+}
+
+.footer
+{
+  color:black;
+  position: absolute;
+  top: 2010px;
+  width: 100%;
+  text-align: center;
+}
+
+.home
+{
+  background-color: rgb(230,216,215);
+  position: absolute;
+  top: 160px;
+  left: 0%;
+  width: 100%;
+  height: 465px;
+}
+
+.welcome
+{
+  position: absolute;
+  top: 160px;
+  left: 55%;
+  font-family: 'Caveat Brush', cursive;
+  font-size: 90px;
+}
+
+.art
+{
+  background-color: rgb(147,97,92) ;
+  position: absolute;
+  top: 625px;
+  left: 0%;
+  width: 100%;
+  height: 569px;
+}
+
+.artpic
+{
+  z-index: 500;
+  position: absolute;
+  top: 0px;
+  left: 0%;
+  width: 100%;
+}
+
+.art1pic
+{
+  position:absolute;
+  z-index: 500;
+  top: 80px;
+  left: 27%;
+}
+
+.art2pic
+{
+  position:absolute;
+  z-index: 500;
+  top: 80px;
+  left: 51%;
+}
+
+.art3pic
+{
+  position:absolute;
+  z-index: 500;
+  top: 80px;
+  left: 75.7%;
+  width: 20%;
+  border-radius: 50%;
+}
+
+.alb1pic
+{
+  position:absolute;
+  z-index: 500;
+  top: 80px;
+  left: 0.5%;
+}
+
+.alb2pic
+{
+  position:absolute;
+  z-index: 500;
+  top: 80px;
+  left: 26%;
+}
+
+.alb3pic
+{
+  position:absolute;
+  z-index: 500;
+  top: 80px;
+  left: 50%;
+  width: 20%;
+  border-radius: 50%;
+}
+
+.song1pic
+{
+  position:absolute;
+  z-index: 500;
+  top: 80px;
+  left: 26%;
+}
+
+.song2pic
+{
+  position:absolute;
+  z-index: 500;
+  top: 80px;
+  left: 50%;
+}
+
+.song3pic
+{
+  position:absolute;
+  z-index: 500;
+  top: 80px;
+  left: 75.7%;
+  width: 20%;
+  border-radius: 50%;
+}
+
+
+
+
+.alb
+{
+  background-color: rgb(230,216,215);
+  position: absolute;
+  top: 1195px;
+  left: 0%;
+  width: 100%;
+  height: 569px;
+}
+
+.albpics
+{
+  z-index: 500;
+  position: absolute;
+  top: 0px;
+  left: 74.5%;
+}
+
+.sng
+{
+  background-color: rgb(147,97,92);
+  position: absolute;
+  top: 1765px;
+  left: 0%;
+  width: 100%;
+  height: 569px;
+}
+
+.sngpic
+{
+  z-index: 500;
+  position: absolute;
+  top: 0px;
+  left: 0%;
+}
+
+.footerh
+{
+  color:black;
+  position: absolute;
+  top: 2340px;
+  width: 100%;
+  text-align: center;
+}
+
+.abouthead
+{
+  position: absolute;
+  top:160px;
+  left: 0;
+  height: 160px;
+  width: 100%;
+  font-family: 'Alkatra', cursive;
+  font-size: 50px;
+  text-align: center;
+  background-color: rgb(147,97,92);
+  color: white;
+}
+
+.logo
+{
+  position: absolute;
+  top: 360px;
+  left: 0px;
+  width: 35%;
+  height: 500px;
+}
+
+.info
+{
+  position: absolute;
+  font-family: 'Manrope', sans-serif;
+  font-size: x-large;
+  top:420px;
+  left: 35%;
+}
+
+.albdetlight
+{
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+}
+
+.albdetdark
+{
+  color: black;
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+}
+
+/* below is for song page */
+.albpic
+{
+  position: absolute;
+  left:0%;
+  top:150px;
+  height: 600px;
+  width: 33.4%;
+}
+
+.details
+{
+  background-color: rgb(230,216,215);
+  font-family: 'Kanit', sans-serif;
+  font-size: 50px;
+  position: absolute;
+  top:150px;
+  height: 500px;
+  left: 32.5%;
+  width: 67.5%;
+  color: black;
+  text-align: center;
+  padding-top: 100px;
+}
+
+
+.song1bg
+{
+  background-color: rgb(230,216,215);
+  color: black;
+  position: absolute;
+  margin-top: 50px;
+  top: 810px;
+  left: 3%;
+  width: 60%;
+  height: 60px;
+}
+
+.song2bg
+{
+  background-color: rgb(147,97,92);
+  color: white;
+  position: absolute;
+  margin-top: 50px;
+  top: 870px;
+  left: 3%;
+  width: 60%;
+  height: 60px;
+}
+
+.song3bg
+{
+  background-color: rgb(230,216,215);
+  color: black;
+  position: absolute;
+  margin-top: 50px;
+  top: 930px;
+  left: 3%;
+  width: 60%;
+  height: 60px;
+}
+
+.song4bg
+{
+  background-color: rgb(147,97,92);
+  color: white;
+  position: absolute;
+  margin-top: 50px;
+  top: 990px;
+  left: 3%;
+  width: 60%;
+  height: 60px;
+}
+
+.song5bg
+{
+  background-color: rgb(230,216,215);
+  color: black;
+  position: absolute;
+  margin-top: 50px;
+  top: 1050px;
+  left: 3%;
+  width: 60%;
+  height: 60px;
+}
+
+.song6bg
+{
+  background-color: rgb(147,97,92);
+  color: white;
+  position: absolute;
+  margin-top: 50px;
+  top: 1110px;
+  left: 3%;
+  width: 60%;
+  height: 60px;
+}
+
+.splogo
+{
+  position: absolute;
+  top: 750px;
+  height: 360px;
+  left: 65%;
+}
+
+.spfooter
+{
+  color:black;
+  position: absolute;
+  top: 1300px;
+  width: 100%;
+  text-align: center;
+}
+.about
+{
+  background-color: rgb(233,209,209);
+  color: black;
+  position: absolute;
+  margin-top: 50px;
+  top: 950px;
+  left: 0%;
+  width: 100%;
+  height: 60px;
+}
+
+.creater1
+{
+  background-color: rgb(147,97,92) ;
+  color: white;
+  position: absolute;
+  top: 1060px;
+  left: 0%;
+  width: 100%;
+  height: 500px;
+}
+
+.creater2
+{
+  background-color: rgb(233,209,209);
+  color: black;
+  position: absolute;
+  top: 1560px;
+  left: 0%;
+  width: 100%;
+  height: 500px;
+}
+
+.footerabout
+{
+  color:black;
+  position: absolute;
+  top: 2060px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* spot light page */
+.container {
+	max-width: 8000px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.artist-info img
+{
+  position: absolute;
+  left: -31.5%;
+  top:0px;
+  height: 600px;
+  width: 40%;
+}
+
+.artist-info
+{
+  background-color: rgb(230,216,215);
+  font-family: 'Kanit', sans-serif;
+  font-size: 30px;
+  position: absolute;
+  top:150px;
+  height: 500px;
+  left: 25%;
+  width: 75%;
+  color: black;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.data 
+{
+  position: relative;
+  left:10%;
+  width: 90%;
+  top: -50px;
+}
+
+#zoom {
+	transition: transform .2s;
+}
+
+#zoom:hover {
+	transform: scale(1.1);
+}
+
+
+.rating {
+  display: inline-block;
+  position: relative;
+  height: 30px;
+  margin: 0 10px;
+}
+
+.rating input {
+  position: absolute;
+  left: -9999px;
+}
+
+.rating label {
+  float: right;
+  width: 30px;
+  height: 30px;
+  background-image: url('path/to/star.png');
+  background-position: 0 -30px;
+  cursor: pointer;
+}
+
+.rating label:hover,
+.rating input:checked ~ label {
+  background-position: 0 0;
+}
+
+.rating input:checked + label ~ label {
+  background-position: 0 -30px;
+}
+
+
+
+.reviews form label {
+	display: block;
+}
+
+.reviews
+{
+	position: relative;
+	top : 720px;
+  width : 65%;
+  color: white;
+  left: 0px;
+}
+
+.postreview
+{
+  font-family: 'Kanit', sans-serif;
+  background-color: rgb(147,97,92);
+  position: relative;
+  top: 10px;
+  font-size: 50px;
+}
+
+.reviews form input[type="text"],
+.reviews form textarea {
+	display: block;
+	width: 100%;
+}
+
+.reviews form input[type="radio"] {
+	display: none;
+}
+
+.reviews form input[type="radio"] + label:before {
+	content: "\2605";
+	font-size: 30px;
+	color: #ddd;
+}
+
+.reviews form input[type="radio"]:checked + label:before {
+	color: #ffcc00;
+}
+
+.reviews form input[type="submit"] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.reviews form input[type="submit"]:hover {
+	background-color: #3e8e41;
+}
+
+.preview
+{
+  font-family: 'Kanit', sans-serif;
+  background-color: rgb(233,209,209);
+  position: relative;
+  width: 133%;
+  top : 40px;
+  left : 40px;
+  color: black;
+  font-size: 50px;
+}
+#reviews-table {
+  position: relative;
+  background-color: rgb(233,209,209);
+  width: 133%;
+  top : -10px;
+  left : 40px;
+  color: black;
+	border-collapse: collapse;
+}
+#review-content {
+  position: relative;
+  background-color: rgb(233,209,209);
+  width: 133%;
+  top : -10px;
+  left : 40px;
+  color: black;
+  text-align: center;
+	border-collapse: collapse;
+}
+
+
+#countdown {
+    text-align: center;
+  }
+  
+  #timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  #timer div {
+    text-align: center;
+  }
+  
+  #timer div span {
+    display: block;
+    font-size: 50px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  #timer div div {
+    font-size: 16px;
+    color: #666;
+    margin-top: 5px;
+  }
+
+  .splogosl
+{
+  position: absolute;
+  top: 770px;
+  height: 360px;
+  left: 65%;
+}
+
+
+/* done spotlight */
+
+.search-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1200;
+  margin-top: 140px;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.search-container input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  
+  border-radius: 10px 0 0 10px;
+  font-size: 16px;
+  background-color: #f2f2f2;
+  width: 300px;
+}
+
+.search-container button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 0 100px 100px 0;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+  margin-left: -5px; /* add this to remove the small gap between the input and the button */
+}
+
+
+.search-container button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.search-container button[type="submit"]:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+#response-container {
+  margin-top: 250px;
+}
+.error-no-result {
+  color: red;
+  font-size: 1.2em;
+  text-align: center;
+  margin: 20px 0;
+  top:1800px;
+
+}
+.search-result {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 1.2rem;
+}
+
+.search-result-img {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.search-result-img img {
+  width: 200px;
+  height: 200px;
+}
+
+.search-result-details {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  width: 500px; /* set a fixed width */
+}
+
+.search-result h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.search-result p {
+  margin: 0;
+}
+
+.logopicsp
+{
+  position:absolute;
+  z-index: -100;
+  top: 300px;
+  left: 30%;
+  
+}
+#filter-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  width: 40%;
+  margin-top: -40px;
+  float:right;
+  margin-right:200px ;
+}
+
+
+#filter-bar div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#filter-bar div:not(:last-child) {
+  margin-right: 20px;
+}
+
+#filter-bar label {
+  margin-right: 10px;
+}
+
+#filter-bar button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius:100px 100px 100px 100px;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+#filter-bar button:hover {
+  opacity: 0.8;
+}
+#results-container {
+  position: relative;
+  top: 580px;
+}
+.track-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.artist-name {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.search-footer {
+  color: black;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+  
+

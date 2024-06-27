@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BeatBank</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"  href="index.css">
+	<script src="script.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="header">
+        <p class="head">BeatBank</p>
+    </div>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href= "artists.html">Artists</a></li>
+          <li><a href="about.html">About</a></li>
+	  <li><a href="search.html">Search</a></li>
+	  <li><a class="active" href="spotlight.html">Spotlight</a></li>
+        </ul>
+    </nav> 
+
+    <div class="container">
+		<div class="artist-info">
+			<img src="Album HTML/albpics/shreyagoshal.webp" alt="Artist Image" id="zoom" onload="zoomIn();">
+			<div class = data>
+			<h1>Shreya Goshal</h1>
+			<p>Shreya Ghoshal is a renowned Indian playback singer known for her melodious and soulful voice. She has won several prestigious awards for her work in the Indian film industry, including four National Film Awards and six Filmfare Awards. With over two decades of experience in the industry, she has recorded songs in various languages such as Hindi, Bengali, Tamil, Telugu, Kannada, and more. Shreya's versatility and ability to bring emotions alive through her voice have made her a popular and beloved singer among music enthusiasts worldwide.</p>
+            </div>
+		</div>
+
+		<div class="reviews">
+			<form   style="background-color: rgb(147,97,92);">
+				<pre class = "postreview">.                                 Rate and review   </pre>
+				<label for="name"><h1>Name:</h1></label>
+				<input type="text" placeholder="Enter your name here" id="name" name="name" required style="height: 30px;">
+				<br>
+				<label for="rating"><h1>Rating:</h1></label>
+				<div class="rating">
+					<input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+					<input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+					<input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+					<input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+					<input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+				</div>
+				<br>
+				<label for="review"><h1>Review:</h1></label>
+				<textarea id="review" name="review" placeholder="Write your review about artist" required style="font-family: 'Kanit';"></textarea>
+				<br>
+				<input type="submit" value="Submit" onclick="addReview(event)">
+				<br>
+			</form>
+			<br>
+
+			<table id="reviews-table">
+				<pre class = "preview">.                                                          Reviews   </pre>
+				<tr>
+					<th><h1>Name</h1></th>
+					<th><h1>Rating</h1></th>
+					<th><h1>Review</h1></th>
+				</tr>
+                <table id="review-content">
+                </table>
+			</table>
+		</div>
+
+        <div style="position: relative; top:760px" id="countdown">
+            <h2>Countdown to Album Release</h2>
+            <div id="timer">
+            <div>
+                <span id="days"></span>
+                <div>Days</div>
+            </div>
+            <div>
+                <span id="hours"></span>
+                <div>Hours</div>
+            </div>
+            <div>
+                <span id="minutes"></span>
+                <div>Minutes</div>
+            </div>
+            <div>
+                <span id="seconds"></span>
+                <div>Seconds</div>
+            </div>
+            </div>
+			<br>
+			<br>
+			<p>Copyright &copy: 2023 - 405 Found</p>
+        </div>
+	</div>
+	<div class="splogosl">
+        <img src="mainpics/logo.png">
+    </div>
+</body>
+</html>
+
